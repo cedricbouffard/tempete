@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $homepage := .Site.Data.homepage }}
+{{ $homepage := index .Site.Data "site/homepage" }}
 <section class="hero">
   <div class="container">
     <div class="hero-content">

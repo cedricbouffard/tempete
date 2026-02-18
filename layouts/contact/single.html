@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $contact := .Site.Data.contact }}
+{{ $contact := index .Site.Data "site/contact" }}
 <div class="container page-container">
   <article class="contact-page">
     <header class="page-header">
