@@ -1,7 +1,8 @@
 baseURL = 'https://cedricbouffard.github.io/tempete/'
 languageCode = 'fr-CA'
 title = 'Concessionnaire Souffleuses & Pièces'
-theme = ''
+
+# No theme - using custom layouts
 
 # Permalinks canoniques
 [permalinks]
