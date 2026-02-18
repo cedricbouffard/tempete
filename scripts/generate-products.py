@@ -11,9 +11,9 @@ from pathlib import Path
 
 # Configuration
 CONTENT_DIR = Path("content/produits")
-DATA_DIR = Path("data")
+DATA_DIR = Path("scripts/data")
 CSV_FILE = DATA_DIR / "produits.csv"
-SPECS_FILE = DATA_DIR / "specs.yaml"
+SPECS_FILE = Path("data/specs.yaml")
 
 
 def slugify(text):
