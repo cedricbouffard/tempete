@@ -48,10 +48,10 @@ def generate_index():
             metadata, body = parse_frontmatter(content)
 
             rel_path = md_file.relative_to(CONTENT_DIR)
-            # Use forward slashes for URLs
-            url = "/" + str(rel_path).replace("\\", "/").replace(".md", "/").replace(
-                "_index/", ""
-            )
+            # Use forward slashes for URLs and include baseURL prefix
+            url = "/tempete/" + str(rel_path).replace("\\", "/").replace(
+                ".md", "/"
+            ).replace("_index/", "")
 
             entry = {
                 "title": metadata.get("title", md_file.stem),
