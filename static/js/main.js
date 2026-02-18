@@ -27,7 +27,7 @@ function initSearch() {
   if (!searchInput) return;
   
   // Charge l'index de recherche
-  fetch('/search-index.json')
+  fetch('/tempete/search-index.json')
     .then(response => response.json())
     .then(data => {
       window.searchIndex = data;
